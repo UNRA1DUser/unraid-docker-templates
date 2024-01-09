@@ -7,8 +7,8 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support/>
-  <Project/>
+  <Support>https://forums.unraid.net/topic/150912-support-unra1duser-mysql-official/</Support>
+  <Project>https://www.mysql.com/</Project>
   <Overview>Official MySQL database container. It allows to set a database and username without using the console.&#xD;
 &#xD;
 MySQL is the world's most popular open source database. With its proven performance, reliability and ease-of-use, MySQL has become the leading database choice for web-based applications, covering the entire range from personal projects and websites, via e-commerce and information services, all the way to high profile web properties including Facebook, Twitter, YouTube, Yahoo! and many more.&#xD;
@@ -29,15 +29,22 @@ Many configuration options can be passed as flags to mysqld. This will give you 
 &#xD;
 --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci&#xD;
 &#xD;
-Here is a list of all Server System Variables -&amp;gt; https://dev.mysql.com/doc/refman/8.0/en/server-system-variables.html</Overview>
+Here is a list of all Server System Variables -&amp;gt; https://dev.mysql.com/doc/refman/8.0/en/server-system-variables.html&#xD;
+&#xD;
+#Repository tags:&#xD;
+If you want to install a specific version of mysql, you can simply customize the repository. For example:&#xD;
+&#xD;
+mysql (is the same like mysql:latest)&#xD;
+mysql:5.7&#xD;
+mysql:8.2.0</Overview>
   <Category/>
   <WebUI/>
   <TemplateURL/>
-  <Icon/>
+  <Icon>https://raw.githubusercontent.com/UNRA1DUser/unraid-docker-templates/main/UNRA1DUser/images/library-mysql-logo.png</Icon>
   <ExtraParams>--user=99:100 --memory=2G</ExtraParams>
   <PostArgs>mysqld --log-error=/var/log/mysql/error.log</PostArgs>
   <CPUset/>
-  <DateInstalled>1704750836</DateInstalled>
+  <DateInstalled>1704788150</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
