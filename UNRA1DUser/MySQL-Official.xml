@@ -37,14 +37,14 @@ If you want to install a specific version of mysql, you can simply customize the
 mysql (is the same like mysql:latest)&#xD;
 mysql:5.7&#xD;
 mysql:8.2.0</Overview>
-  <Category/>
+  <Category>Other: Network:Other</Category>
   <WebUI/>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/UNRA1DUser/unraid-docker-templates/main/UNRA1DUser/images/library-mysql-logo.png</Icon>
   <ExtraParams>--user=99:100 --memory=2G</ExtraParams>
   <PostArgs>mysqld --log-error=/var/log/mysql/error.log</PostArgs>
   <CPUset/>
-  <DateInstalled>1704788150</DateInstalled>
+  <DateInstalled>1704788653</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
