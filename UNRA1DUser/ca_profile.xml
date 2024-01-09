@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Maintainer>
+  <Icon>https://raw.githubusercontent.com/UNRA1DUser/unraid-docker-templates/main/UNRA1DUser/images/avatar.png</Icon>
+  <Profile>
+    I am trying to create Docker containers with official images. I create the template as modular as possible so that almost all settings can be set.
+  </Profile>
+  <DonateLink>paypal.me/M4rc31</DonateLink>
+  <DonateText>If you like my work and would like to support me please consider Donating.</DonateText>
+</Maintainer>
