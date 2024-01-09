@@ -45,8 +45,8 @@ mysql:8.2.0</Overview>
   <PostArgs>mysqld --log-error=/var/log/mysql/error.log</PostArgs>
   <CPUset/>
   <DateInstalled>1704807901</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
+  <DonateText/>If you like my work and would like to support me please consider Donating.</DonateText>
+  <DonateLink/>paypal.me/M4rc31</DonateLink>
   <Requires/>
   <Config Name="MYSQL_TCP_PORT" Target="3306" Default="3306" Mode="tcp" Description="MYSQL_TCP_PORT" Type="Port" Display="always" Required="true" Mask="false"/>
   <Config Name="Generate Random Password" Target="MYSQL_RANDOM_ROOT_PASSWORD" Default="yes" Mode="" Description="Set to yes, to generate a random root password. The generated password will be printed to the logs (Docker &amp;gt; MySQL Icon &amp;gt; Logs)." Type="Variable" Display="always" Required="false" Mask="false"/>
