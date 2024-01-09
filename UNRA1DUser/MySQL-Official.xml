@@ -41,10 +41,10 @@ mysql:8.2.0</Overview>
   <WebUI/>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/UNRA1DUser/unraid-docker-templates/main/UNRA1DUser/images/library-mysql-logo.png</Icon>
-  <ExtraParams>--user=99:100 --memory=2G</ExtraParams>
+  <ExtraParams>--user=99:100 --memory=2G --restart=unless-stopped</ExtraParams>
   <PostArgs>mysqld --log-error=/var/log/mysql/error.log</PostArgs>
   <CPUset/>
-  <DateInstalled>1704788821</DateInstalled>
+  <DateInstalled>1704801635</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
