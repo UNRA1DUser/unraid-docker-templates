@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>ONLYOFFICE-Mail-Official</Name>
+  <Repository>onlyoffice/mailserver</Repository>
+  <Registry>https://hub.docker.com/r/onlyoffice/mailserver</Registry>
+  <Network>onlyoffice</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://www.onlyoffice.com/</Project>
+  <Overview/>
+  <Category>Cloud: Productivity: Tools: Network:Other</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/UNRA1DUser/unraid-docker-templates/main/UNRA1DUser/images/ONLYOFFICE.jpg</Icon>
+  <ExtraParams>--user=99:100 --memory=4G --restart=unless-stopped</ExtraParams>
+  <PostArgs>-h yourdomain.com</PostArgs>
+  <CPUset/>
+  <DateInstalled>1704821028</DateInstalled>
+  <DonateText>If you like my work and would like to support me please consider Donating.</DonateText>
+  <DonateLink>paypal.me/M4rc31</DonateLink>
+  <Requires/>
+  <Config Name="SMTP_TCP_PORT" Target="25" Default="25" Mode="tcp" Description="25: SMTP - The default port for the Simple Mail Transfer Protocol, used to transfer email messages from source to destination between mail servers and used by end users to send email to a mail system." Type="Port" Display="always" Required="true" Mask="false">25</Config>
+  <Config Name="IMAP_STARTTLS_TCP_PORT" Target="143" Default="143" Mode="tcp" Description="143: IMAP STARTTLS - The default port for the Internet Message Access Protocol using STARTTLS connection, which is used to retrieve email messages from the server without the need to download them to the client; if STARTTLS connection is not available an insecure connection will be used." Type="Port" Display="always" Required="true" Mask="false">143</Config>
+  <Config Name="SMTP_STARTTLS_TCP_PORT" Target="587" Default="587" Mode="tcp" Description="587: SMTP STARTTLS - The default port for the Simple Mail Transfer Protocol Secure, used to transfer email messages from source to destination between the mail servers and used by end users to send email to a mail system via secure connection using TLS." Type="Port" Display="always" Required="true" Mask="false">587</Config>
+  <Config Name="MySQL Server Address" Target="MYSQL_SERVER" Default="onlyoffice-mysql-server" Mode="" Description="MYSQL_SERVER IP-ADDRESS" Type="Variable" Display="always" Required="true" Mask="false">onlyoffice-mysql-server</Config>
+  <Config Name="MYSQL_TCP_PORT" Target="MYSQL_SERVER_PORT" Default="3306" Mode="" Description="MYSQL_TCP_PORT" Type="Variable" Display="always" Required="true" Mask="false">3306</Config>
+  <Config Name="Database Name" Target="MYSQL_SERVER_DB_NAME" Default="onlyoffice_mailserver" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">onlyoffice_mailserver</Config>
+  <Config Name="Database User" Target="MYSQL_ROOT_USER" Default="mail_admin" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">mail_admin</Config>
+  <Config Name="Database Password" Target="MYSQL_ROOT_PASSWD" Default="Isadmin123" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">Isadmin123</Config>
+  <Config Name="Data" Target="/var/vmail" Default="/mnt/user/appdata/onlyoffice-official/onlyoffice-mail-official/data" Mode="rw" Description="ONLYOFFICE Mail Server Data" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/onlyoffice-official/onlyoffice-mail-server-official/data</Config>
+  <Config Name="Logs" Target="/var/log" Default="/mnt/user/appdata/onlyoffice-official/onlyoffice-mail-official/logs" Mode="rw" Description="ONLYOFFICE Mail Server Logs" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/onlyoffice-official/onlyoffice-mail-server-official/logs</Config>
+  <Config Name="Certificates" Target="/etc/pki/tls/mailserver" Default="/mnt/user/appdata/onlyoffice-official/onlyoffice-mail-official/certificates" Mode="rw" Description="ONLYOFFICE Mail Server Certificates" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/onlyoffice-official/onlyoffice-mail-server-official/certificates</Config>
+</Container>
