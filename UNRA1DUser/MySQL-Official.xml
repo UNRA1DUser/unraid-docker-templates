@@ -16,7 +16,7 @@ MySQL is the world's most popular open source database. With its proven performa
 For more information and related downloads for MySQL Server and other MySQL products, please visit www.mysql.com.&#xD;
 &#xD;
 #Root Password:&#xD;
-This container creates by default a random root password on initial execution. Open Docker &amp;gt; MariaDB Icon &amp;gt; Logs &amp;gt; Scroll down to "GENERATED ROOT PASSWORD" to find it.&#xD;
+This container creates by default a random root password on initial execution. Open Docker &amp;gt; MySQL Icon &amp;gt; Logs &amp;gt; Scroll down to "GENERATED ROOT PASSWORD" to find it.&#xD;
 &#xD;
 #Creating database dumps&#xD;
 docker exec some-mysql sh -c 'exec mysqldump --all-databases -uroot -p"$MYSQL_ROOT_PASSWORD"' &amp;gt; /mnt/user/Backups/all-databases.sql&#xD;
