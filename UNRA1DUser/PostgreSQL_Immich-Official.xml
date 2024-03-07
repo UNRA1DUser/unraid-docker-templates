@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>PostgreSQL_Immich-Official</Name>
+  <Repository>tensorchord/pgvecto-rs:pg16-v0.2.1</Repository>
+  <Registry>https://hub.docker.com/r/tensorchord/pgvecto-rs</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/tensorchord/pgvecto.rs</Support>
+  <Project>https://www.postgresql.org/</Project>
+  <Overview>This container (based on PostgreSQL 16) is specifically configured for seamless integration with the Immich container, which requires PostgreSQL equipped with pgvecto a robust Postgres extension enabling vector similarity search functions. The specific version used is tensorchord/pgvecto-rs:pg16-v0.2.1&#xD;
+&#xD;
+&#xD;
+#Note&#xD;
+Any change here should be replicated in the Immich container configuration.</Overview>
+  <Category>Tools: Other: Network:Other</Category>
+  <WebUI/>
+  <TemplateURL>https://github.com/UNRA1DUser/unraid-docker-templates/tree/main/UNRA1DUser</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/UNRA1DUser/unraid-docker-templates/main/UNRA1DUser/img/postgresql-immich-logo.png</Icon>
+  <ExtraParams>--memory=2G --restart=unless-stopped</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1709814329</DateInstalled>
+  <DonateText>If you like my work and would like to support me please consider Donating.</DonateText>
+  <DonateLink>https://www.paypal.com/paypalme/M4rc31</DonateLink>
+  <Requires>The Immich container and Redis container (or Redis can be enabled with docker mods in Immich container instead of separate Redis)</Requires>
+  <Config Name="POSTGRESQL_TCP_PORT" Target="5432" Default="5433" Mode="tcp" Description="PostgreSQL TCP connection port mapped to 5433 from 5432 in case of other postgres container present" Type="Port" Display="always-hide" Required="true" Mask="null"></Config>
+  <Config Name="Postgres Password" Target="POSTGRES_PASSWORD" Default="immich" Mode="" Description="Initial superuser password (required)" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Database User" Target="POSTGRES_USER" Default="immich" Mode="" Description="Initial superuser name (default: postgres)" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Database Name" Target="POSTGRES_DB" Default="immich" Mode="" Description="Initial database name (default: postgres)" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Database Storage Path (Appdata)" Target="/var/lib/postgresql/data" Default="/mnt/cache/appdata/postgresql_immich-official" Mode="rw" Description="PostgreSQL data storage location" Type="Path" Display="always" Required="true" Mask="null"></Config>
+</Container>
