@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>ONLYOFFICE-Controlpanel-Official</Name>
+  <Repository>onlyoffice/controlpanel</Repository>
+  <Registry>https://hub.docker.com/r/onlyoffice/controlpanel</Registry>
+  <Network>onlyoffice</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://www.onlyoffice.com/</Project>
+  <Overview>Official ONLYOFFICE-Controlpanel-Official container configured with the Instructions from ONLYOFFICE!&#xD;
+&#xD;
+#Installation order&#xD;
+ONLYOFFICE-MySQL-Official&#xD;
+ONLYOFFICE-Mail-Official&#xD;
+ONLYOFFICE-Document-Official&#xD;
+ONLYOFFICE-Controlpanel-Official&#xD;
+ONLYOFFICE-Community-Official</Overview>
+  <Category>Cloud: Productivity: Tools: Network:Other</Category>
+  <WebUI>http://[IP]:[PORT:8070]</WebUI>
+  <TemplateURL>https://github.com/UNRA1DUser/unraid-docker-templates/tree/main/UNRA1DUser</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/UNRA1DUser/unraid-docker-templates/main/UNRA1DUser/img/onlyoffice.png</Icon>
+  <ExtraParams>--memory=1G --restart=unless-stopped</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1705347842</DateInstalled>
+  <DonateText>If you like my work and would like to support me please consider Donating.</DonateText>
+  <DonateLink>https://www.paypal.com/paypalme/M4rc31</DonateLink>
+  <Requires/>
+  <Config Name="HTTP_TCP_PORT" Target="80" Default="8070" Mode="tcp" Description="Hypertext Transfer Protocol (HTTP) uses TCP in versions 1.x and 2" Type="Port" Display="always" Required="true" Mask="false">8070</Config>
+  <Config Name="HTTPS_TCP_PORT" Target="443" Default="44370" Mode="tcp" Description="Hypertext Transfer Protocol Secure (HTTPS) uses TCP in versions 1.x and 2" Type="Port" Display="always" Required="true" Mask="false">44370</Config>
+  <Config Name="Data" Target="/var/www/onlyoffice/Data" Default="/mnt/user/appdata/onlyoffice-official/onlyoffice-controlpanel-server-official/data" Mode="rw" Description="ONLYOFFICE Document Server Data" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/onlyoffice-official/onlyoffice-controlpanel-server-official/data</Config>
+  <Config Name="Logs" Target="/var/log/onlyoffice" Default="/mnt/user/appdata/onlyoffice-official/onlyoffice-controlpanel-server-official/logs" Mode="rw" Description="ONLYOFFICE Document Server Logs" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/onlyoffice-official/onlyoffice-controlpanel-server-official/logs</Config>
+  <Config Name="Community Server Data" Target="/app/onlyoffice/CommunityServer/data" Default="/mnt/user/appdata/onlyoffice-official/onlyoffice-community-server-official/data" Mode="rw" Description="ONLYOFFICE Document Server Database" Type="Path" Display="always" Required="true" Mask="false">/mnt/cache/appdata/onlyoffice-official/onlyoffice-community-server-official/data</Config>
+</Container>
