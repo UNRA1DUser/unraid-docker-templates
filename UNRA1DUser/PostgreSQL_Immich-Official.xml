@@ -17,7 +17,7 @@ Any change here should be replicated in the Immich container configuration.</Ove
   <Category>Tools: Other: Network:Other</Category>
   <WebUI/>
   <TemplateURL>https://github.com/UNRA1DUser/unraid-docker-templates/tree/main/UNRA1DUser</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/UNRA1DUser/unraid-docker-templates/main/UNRA1DUser/img/postgresql-immich-logo.png</Icon>
+  <Icon>https://raw.githubusercontent.com/UNRA1DUser/unraid-docker-templates/main/UNRA1DUser/img/postgresql-immich.png</Icon>
   <ExtraParams>--memory=2G --restart=unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
