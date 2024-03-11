@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Immich-Official</Name>
+  <Repository>ghcr.io/imagegenius/immich</Repository>
+  <Registry>https://github.com/imagegenius/docker-immich/pkgs/container/immich</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/imagegenius/docker-immich/issues</Support>
+  <Project>https://immich.app/</Project>
+  <Overview>Immich is a high performance self-hosted photo and video backup solution.</Overview>
+  <Category>Cloud: Productivity: MediaApp:Video MediaApp:Photos MediaServer:Video MediaServer:Photos Network:Web Network:Other</Category>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <TemplateURL>https://github.com/UNRA1DUser/unraid-docker-templates/tree/main/UNRA1DUser</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/imagegenius/templates/main/unraid/img/immich.png</Icon>
+  <ExtraParams>--memory=2G --restart=unless-stopped</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1710178215</DateInstalled>
+  <DonateText>If you like my work and would like to support me please consider Donating.</DonateText>
+  <DonateLink>https://www.paypal.com/paypalme/M4rc31</DonateLink>
+  <Requires>This Immich container is configured to be used the "PostgreSQL_Immich-Official" and "Redis-Official" Container.</Requires>
+  <Config Name="WebUI" Target="8080" Default="8080" Mode="tcp" Description="WebUI Port" Type="Port" Display="always" Required="true" Mask="null"/>
+  <Config Name="Timezone" Target="TZ" Default="Europe/Berlin" Mode="" Description="Specify a timezone to use, see this https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Immich Storage Path" Target="/config" Default="/mnt/cache/appdata/immich-official/config" Mode="rw" Description="Contains machine learning models (~1.5GB with default models)" Type="Path" Display="always" Required="true" Mask="null"/>
+  <Config Name="Immich Photos Path" Target="/photos" Default="/mnt/cache/appdata/immich-official/photos" Mode="rw" Description="Contains all the photos uploaded to Immich" Type="Path" Display="always" Required="true" Mask="null"/>
+  <Config Name="Immich Import Path" Target="/import" Default="/mnt/cache/appdata/immich-official/import" Mode="rw" Description="This folder will be periodically scanned, contents will be automatically imported into Immich" Type="Path" Display="always" Required="true" Mask="null"/>
+  <Config Name="DB_PORT" Target="DB_PORT" Default="5433" Mode="{3}" Description="PostgreSQL Port" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="DB_HOSTNAME" Target="DB_HOSTNAME" Default="192.168.1.x" Mode="{3}" Description="PostgreSQL Host" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="DB_USERNAME" Target="DB_USERNAME" Default="immich" Mode="{3}" Description="PostgreSQL Username" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="DB_PASSWORD" Target="DB_PASSWORD" Default="immich" Mode="{3}" Description="PostgreSQL Password" Type="Variable" Display="always" Required="true" Mask="true"/>
+  <Config Name="DB_DATABASE_NAME" Target="DB_DATABASE_NAME" Default="immich" Mode="{3}" Description="PostgreSQL Database Name" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="REDIS_PORT" Target="REDIS_PORT" Default="6379" Mode="{3}" Description="Redis Port" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="REDIS_HOSTNAME" Target="REDIS_HOSTNAME" Default="192.168.1.x" Mode="{3}" Description="Redis Hostname" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="REDIS_PASSWORD" Target="REDIS_PASSWORD" Default="" Mode="{3}" Description="Redis password" Type="Variable" Display="always" Required="false" Mask="true"/>
+  <Config Name="MACHINE_LEARNING_GPU_ACCELERATION" Target="MACHINE_LEARNING_GPU_ACCELERATION" Default="" Mode="{3}" Description="Enable cuda acceleration by setting the value to 'cuda'" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="MACHINE_LEARNING_WORKERS" Target="MACHINE_LEARNING_WORKERS" Default="1" Mode="{3}" Description="Machine learning workers" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="MACHINE_LEARNING_WORKER_TIMEOUT" Target="MACHINE_LEARNING_WORKER_TIMEOUT" Default="120" Mode="{3}" Description="Machine learning worker timeout" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="UID for permissions. Do not change unless you know what you're doing." Type="Variable" Display="advanced" Required="true" Mask="false"/>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="GID for permissions. Do not change unless you know what you're doing." Type="Variable" Display="advanced" Required="true" Mask="false"/>
+  <Config Name="UMASK" Target="UMASK" Default="022" Mode="" Description="UMASK for newly created files. Do not change unless you know what you're doing." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+</Container>
