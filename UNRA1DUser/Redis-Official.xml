@@ -28,7 +28,7 @@ I have limited this Docker to 10 GB. If you want to use less or more RAM, you ca
   <DonateText>If you like my work and would like to support me please consider Donating.</DonateText>
   <DonateLink>https://www.paypal.com/paypalme/M4rc31</DonateLink>
   <Requires>After you started this Container the first time and the folder has been created. Stop the Server and upload the "redis.conf" file from "https://github.com/UNRA1DUser/unraid-docker-templates/blob/main/.conf/redis.conf" into your "/redis-official/conf" folder! Otherwithe this Container won&#xB4;t start!</Requires>
-  <Config Name="REDIS_TCP_PORT" Target="6379" Default="6379" Mode="tcp" Description="Redis TCP connection port" Type="Port" Display="always" Required="true" Mask="null"></Config>
-  <Config Name="Redis Storage Path" Target="/data" Default="/mnt/cache/appdata/redis-official" Mode="rw" Description="Redis data storage location" Type="Path" Display="always" Required="true" Mask="null"></Config>
-  <Config Name="Redis Configuration Path" Target="/usr/local/etc/redis" Default="/mnt/cache/appdata/redis-official/conf" Mode="rw" Description="Redis conf storage location" Type="Path" Display="always" Required="true" Mask="null"></Config>
+  <Config Name="REDIS_TCP_PORT" Target="6379" Default="6379" Mode="tcp" Description="Redis TCP connection port" Type="Port" Display="always" Required="true" Mask="null"/>
+  <Config Name="Redis Storage Path" Target="/data" Default="/mnt/cache/appdata/redis-official" Mode="rw" Description="Redis data storage location" Type="Path" Display="always" Required="true" Mask="null"/>
+  <Config Name="Redis Configuration Path" Target="/usr/local/etc/redis" Default="/mnt/cache/appdata/redis-official/conf" Mode="rw" Description="Redis conf storage location" Type="Path" Display="always" Required="true" Mask="null"/>
 </Container>
