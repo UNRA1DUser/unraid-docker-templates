@@ -26,8 +26,8 @@ Any change here should be replicated in the Immich container configuration.</Ove
   <DonateLink>https://www.paypal.com/paypalme/M4rc31</DonateLink>
   <Requires>The Immich container and Redis container (or Redis can be enabled with docker mods in Immich container instead of separate Redis)</Requires>
   <Config Name="POSTGRESQL_TCP_PORT" Target="5432" Default="5433" Mode="tcp" Description="PostgreSQL TCP connection port mapped to 5433 from 5432 in case of other postgres container present" Type="Port" Display="always" Required="true" Mask="null"></Config>
-  <Config Name="Postgres Password" Target="POSTGRES_PASSWORD" Default="immich" Mode="" Description="Initial superuser password (required)" Type="Variable" Display="always" Required="true" Mask="false"></Config>
-  <Config Name="Database User" Target="POSTGRES_USER" Default="immich" Mode="" Description="Initial superuser name (default: postgres)" Type="Variable" Display="always" Required="false" Mask="false"></Config>
   <Config Name="Database Name" Target="POSTGRES_DB" Default="immich" Mode="" Description="Initial database name (default: postgres)" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Database User" Target="POSTGRES_USER" Default="immich" Mode="" Description="Initial superuser name (default: postgres)" Type="Variable" Display="always" Required="false" Mask="false"></Config>
+  <Config Name="Postgres Password" Target="POSTGRES_PASSWORD" Default="immich" Mode="" Description="Initial superuser password (required)" Type="Variable" Display="always" Required="true" Mask="true"></Config>
   <Config Name="Database Storage Path (Appdata)" Target="/var/lib/postgresql/data" Default="/mnt/cache/appdata/postgresql_immich-official" Mode="rw" Description="PostgreSQL data storage location" Type="Path" Display="always" Required="true" Mask="null"></Config>
 </Container>
