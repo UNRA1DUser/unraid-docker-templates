@@ -29,5 +29,5 @@ Any change here should be replicated in the Immich container configuration.</Ove
   <Config Name="Database Name" Target="POSTGRES_DB" Default="immich" Mode="" Description="Initial database name (default: postgres)" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="Database User" Target="POSTGRES_USER" Default="immich" Mode="" Description="Initial superuser name (default: postgres)" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="Postgres Password" Target="POSTGRES_PASSWORD" Default="immich" Mode="" Description="Initial superuser password (required)" Type="Variable" Display="always" Required="true" Mask="true"/>
-  <Config Name="Database Storage Path (Appdata)" Target="/var/lib/postgresql/data" Default="/mnt/cache/appdata/postgresql_immich-official" Mode="rw" Description="PostgreSQL data storage location" Type="Path" Display="always" Required="true" Mask="null"/>
+  <Config Name="Database Storage Path" Target="/var/lib/postgresql/data" Default="/mnt/cache/appdata/postgresql_immich-official" Mode="rw" Description="PostgreSQL data storage location" Type="Path" Display="always" Required="true" Mask="null"/>
 </Container>
