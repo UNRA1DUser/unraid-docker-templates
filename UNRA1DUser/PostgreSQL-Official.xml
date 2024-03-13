@@ -28,7 +28,4 @@ PostgreSQL implements the majority of the SQL:2011 standard, is ACID-compliant a
   <Config Name="Database User" Target="POSTGRES_USER" Default="postgres" Mode="" Description="Initial superuser name (default: postgres)" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="Postgres Password" Target="POSTGRES_PASSWORD" Default="postgres" Mode="" Description="Initial superuser password (default: postgres)" Type="Variable" Display="always" Required="true" Mask="true"/>
   <Config Name="Database Storage Path" Target="/var/lib/postgresql/data" Default="/mnt/cache/appdata/postgresql-official" Mode="rw" Description="PostgreSQL data storage location" Type="Path" Display="always" Required="true" Mask="null"/>
-  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="UID for permissions. Do not change unless you know what you're doing." Type="Variable" Display="advanced" Required="true" Mask="false"/>
-  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="GID for permissions. Do not change unless you know what you're doing." Type="Variable" Display="advanced" Required="true" Mask="false"/>
-  <Config Name="UMASK" Target="UMASK" Default="022" Mode="" Description="UMASK for newly created files. Do not change unless you know what you're doing." Type="Variable" Display="advanced" Required="true" Mask="false"/>
 </Container>
