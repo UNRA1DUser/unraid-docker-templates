@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>PostgreSQL_Alpine-Official</Name>
+  <Repository>postgres:alpine</Repository>
+  <Registry>https://hub.docker.com/_/postgres</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/UNRA1DUser/unraid-docker-templates/issues</Support>
+  <Project>https://www.postgresql.org/</Project>
+  <Overview>PostgreSQL, often simply "Postgres", is an object-relational database management system (ORDBMS) with an emphasis on extensibility and standards-compliance. As a database server, its primary function is to store data, securely and supporting best practices, and retrieve it later, as requested by other software applications, be it those on the same computer or those running on another computer across a network (including the Internet). It can handle workloads ranging from small single-machine applications to large Internet-facing applications with many concurrent users. Recent versions also provide replication of the database itself for security and scalability.&#xD;
+&#xD;
+PostgreSQL implements the majority of the SQL:2011 standard, is ACID-compliant and transactional (including most DDL statements) avoiding locking issues using multiversion concurrency control (MVCC), provides immunity to dirty reads and full serializability; handles complex SQL queries using many indexing methods that are not available in other databases; has updateable views and materialized views, triggers, foreign keys; supports functions and stored procedures, and other expandability, and has a large number of extensions written by third parties. In addition to the possibility of working with the major proprietary and open source databases, PostgreSQL supports migration from them, by its extensive standard SQL support and available migration tools. And if proprietary extensions had been used, by its extensibility that can emulate many through some built-in and third-party open source compatibility extensions, such as for Oracle.</Overview>
+  <Category>Productivity: Tools: Other: Network:Other</Category>
+  <WebUI/>
+  <TemplateURL>https://github.com/UNRA1DUser/unraid-docker-templates/tree/main/UNRA1DUser</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/UNRA1DUser/unraid-docker-templates/main/UNRA1DUser/img/postgresql.png</Icon>
+  <ExtraParams>--user=99:100 --memory=2G --restart=unless-stopped</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1710340921</DateInstalled>
+  <DonateText>If you like my work and would like to support me please consider Donating.</DonateText>
+  <DonateLink>https://www.paypal.com/paypalme/M4rc31</DonateLink>
+  <Requires/>
+  <Config Name="POSTGRESQL_TCP_PORT" Target="5432" Default="5432" Mode="tcp" Description="PostgreSQL TCP connection port" Type="Port" Display="always" Required="true" Mask="null"/>
+  <Config Name="Database Name" Target="POSTGRES_DB" Default="postgres" Mode="" Description="Initial database name (default: postgres)" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Database User" Target="POSTGRES_USER" Default="postgres" Mode="" Description="Initial superuser name (default: postgres)" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Postgres Password" Target="POSTGRES_PASSWORD" Default="postgres" Mode="" Description="Initial superuser password (default: postgres)" Type="Variable" Display="always" Required="true" Mask="true"/>
+  <Config Name="Database Storage Path" Target="/var/lib/postgresql/data" Default="/mnt/cache/appdata/postgresql_alpine-official" Mode="rw" Description="PostgreSQL data storage location" Type="Path" Display="always" Required="true" Mask="null"/>
+</Container>
