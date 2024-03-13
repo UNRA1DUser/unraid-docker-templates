@@ -1,6 +1,9 @@
 Created Unraid Docker Templates:
 
-- MySQL-Official
+- MySQL-Official (09.01.2024)
+- PostgreSQL_Immich-Official (07.03.2024)
+- Redis-Official (07.03.2024)
+- Immich-Official (11.03.2024)
 
 
 Planned Unraid Docker Templates:
