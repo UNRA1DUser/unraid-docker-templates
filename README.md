@@ -5,6 +5,7 @@ Created Unraid Docker Templates:
 - Redis-Official (07.03.2024)
 - Immich-Official (11.03.2024)
 - PostgreSQL-Official (13.03.2024)
+- PostgreSQL_Alpine-Official (13.03.2024)
 
 
 Planned Unraid Docker Templates:
