@@ -21,7 +21,7 @@ I have limited this Docker to 10 GB. If you want to use less or more RAM, you ca
   <WebUI/>
   <TemplateURL>https://github.com/UNRA1DUser/unraid-docker-templates/tree/main/UNRA1DUser</TemplateURL>
   <Icon>https://raw.githubusercontent.com/UNRA1DUser/unraid-docker-templates/main/UNRA1DUser/img/redis.png</Icon>
-  <ExtraParams>--memory=10G --restart=unless-stopped</ExtraParams>
+  <ExtraParams>--user=99:100 --memory=10G --restart=unless-stopped</ExtraParams>
   <PostArgs>redis-server /usr/local/etc/redis/redis.conf</PostArgs>
   <CPUset/>
   <DateInstalled>1709827005</DateInstalled>
