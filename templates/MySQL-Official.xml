@@ -39,8 +39,8 @@ mysql:5.7&#xD;
 mysql:8.2.0</Overview>
   <Category>Tools: Other: Network:Other</Category>
   <WebUI/>
-  <TemplateURL>https://github.com/UNRA1DUser/unraid-docker-templates/tree/main/UNRA1DUser</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/UNRA1DUser/unraid-docker-templates/main/UNRA1DUser/img/mysql.png</Icon>
+  <TemplateURL>https://github.com/UNRA1DUser/unraid-docker-templates</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/UNRA1DUser/unraid-docker-templates/main/templates/img/mysql.png</Icon>
   <ExtraParams>--user=99:100 --memory=2G --restart=unless-stopped</ExtraParams>
   <PostArgs>mysqld --log-error=/var/log/mysql/error.log</PostArgs>
   <CPUset/>

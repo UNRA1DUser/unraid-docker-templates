@@ -19,8 +19,8 @@ This container is configured using the official redis.conf file!&#xD;
 I have limited this Docker to 10 GB. If you want to use less or more RAM, you can change this under "Extra Parameters" -&amp;gt; "--memory=10G". You can also delete this value completely if you want the Docker to use as much RAM as necessary.</Overview>
   <Category>Network:Management Productivity: Tools:Utilities</Category>
   <WebUI/>
-  <TemplateURL>https://github.com/UNRA1DUser/unraid-docker-templates/tree/main/UNRA1DUser</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/UNRA1DUser/unraid-docker-templates/main/UNRA1DUser/img/redis.png</Icon>
+  <TemplateURL>https://github.com/UNRA1DUser/unraid-docker-templates</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/UNRA1DUser/unraid-docker-templates/main/templates/img/redis.png</Icon>
   <ExtraParams>--user=99:100 --memory=10G --restart=unless-stopped</ExtraParams>
   <PostArgs>redis-server /usr/local/etc/redis/redis.conf</PostArgs>
   <CPUset/>

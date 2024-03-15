@@ -12,8 +12,8 @@
   <Overview>Immich is a high performance self-hosted photo and video backup solution.</Overview>
   <Category>Cloud: Productivity: MediaApp:Video MediaApp:Photos MediaServer:Video MediaServer:Photos Network:Web Network:Other</Category>
   <WebUI>http://[IP]:[PORT:8080]</WebUI>
-  <TemplateURL>https://github.com/UNRA1DUser/unraid-docker-templates/tree/main/UNRA1DUser</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/imagegenius/templates/main/unraid/img/immich.png</Icon>
+  <TemplateURL>https://github.com/UNRA1DUser/unraid-docker-templates</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/UNRA1DUser/unraid-docker-templates/main/templates/img/immich.png</Icon>
   <ExtraParams>--memory=2G --restart=unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>

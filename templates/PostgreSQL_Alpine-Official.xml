@@ -14,8 +14,8 @@
 PostgreSQL implements the majority of the SQL:2011 standard, is ACID-compliant and transactional (including most DDL statements) avoiding locking issues using multiversion concurrency control (MVCC), provides immunity to dirty reads and full serializability; handles complex SQL queries using many indexing methods that are not available in other databases; has updateable views and materialized views, triggers, foreign keys; supports functions and stored procedures, and other expandability, and has a large number of extensions written by third parties. In addition to the possibility of working with the major proprietary and open source databases, PostgreSQL supports migration from them, by its extensive standard SQL support and available migration tools. And if proprietary extensions had been used, by its extensibility that can emulate many through some built-in and third-party open source compatibility extensions, such as for Oracle.</Overview>
   <Category>Productivity: Tools: Other: Network:Other</Category>
   <WebUI/>
-  <TemplateURL>https://github.com/UNRA1DUser/unraid-docker-templates/tree/main/UNRA1DUser</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/UNRA1DUser/unraid-docker-templates/main/UNRA1DUser/img/postgresql.png</Icon>
+  <TemplateURL>https://github.com/UNRA1DUser/unraid-docker-templates</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/UNRA1DUser/unraid-docker-templates/main/templates/img/postgresql.png</Icon>
   <ExtraParams>--user=99:100 --memory=2G --restart=unless-stopped</ExtraParams>
   <PostArgs/>
   <CPUset/>
