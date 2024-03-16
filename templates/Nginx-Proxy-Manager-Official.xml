@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Nginx-Proxy-Manager-Official</Name>
+  <Repository>jc21/nginx-proxy-manager</Repository>
+  <Registry>https://hub.docker.com/r/jc21/nginx-proxy-manager</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/UNRA1DUser/unraid-docker-templates</Support>
+  <Project>https://nginxproxymanager.com/</Project>
+  <Overview>Nginx Proxy Manager enables you to easily forward to your websites running at home or otherwise, including free SSL, without having to know too much about Nginx or Letsencrypt.&#xD;
+&#xD;
+|-------------------------------------------------&#xD;
+|            Default Administrator User&#xD;
+|-------------------------------------------------&#xD;
+Immediately after logging in with this default user you will be asked to modify your details and change your password.&#xD;
+&#xD;
+Email: admin@example.com&#xD;
+Password: changeme&#xD;
+&#xD;
+|-------------------------------------------------&#xD;
+|            Add any other Stream Port&#xD;
+|-------------------------------------------------&#xD;
+You can also add any other Stream port you want to expose.&#xD;
+&#xD;
+'21:21' # FTP&#xD;
+&#xD;
+|-------------------------------------------------&#xD;
+|            Using MySQL / MariaDB Database&#xD;
+|-------------------------------------------------&#xD;
+If you opt for the MySQL configuration you will have to provide the database server yourself. Remove the "DB_SQLITE_FILE" variable and add the following variabels with the right values instead.&#xD;
+&#xD;
+Mysql/Maria connection parameters:&#xD;
+      DB_MYSQL_HOST: "db"&#xD;
+      DB_MYSQL_PORT: 3306&#xD;
+      DB_MYSQL_USER: "npm"&#xD;
+      DB_MYSQL_PASSWORD: "npm"&#xD;
+      DB_MYSQL_NAME: "npm"</Overview>
+  <Category>Tools:Utilities Other: Network:Web Network:Proxy Network:Management Network:Other</Category>
+  <WebUI>http://[IP]:[PORT:81]</WebUI>
+  <TemplateURL>https://github.com/UNRA1DUser/unraid-docker-templates</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/UNRA1DUser/unraid-docker-templates/main/templates/img/nginx-proxy-manager.png</Icon>
+  <ExtraParams>--memory=1G --restart=unless-stopped</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1710594886</DateInstalled>
+  <DonateText>If you like my work and would like to support me please consider Donating.</DonateText>
+  <DonateLink>https://www.paypal.com/paypalme/M4rc31</DonateLink>
+  <Requires/>
+  <Config Name="WebUI TCP Port" Target="81" Default="1881" Mode="tcp" Description="Admin Web Port" Type="Port" Display="always" Required="true" Mask="false"/>
+  <Config Name="HTTP TCP Port" Target="80" Default="1880" Mode="tcp" Description="Public HTTP Port" Type="Port" Display="always" Required="true" Mask="false"/>
+  <Config Name="HTTPS TCP Port" Target="443" Default="18443" Mode="tcp" Description="Public HTTPS Port" Type="Port" Display="always" Required="true" Mask="false"/>
+  <Config Name="DISABLE_IPV6" Target="DISABLE_IPV6" Default="true|false" Mode="" Description="Set to true if you don´t use IPv6" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="Data" Target="/data" Default="/mnt/cache/appdata/Nginx-Proxy-Manager-Official/data" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Certificates" Target="/etc/letsencrypt" Default="/mnt/cache/appdata/Nginx-Proxy-Manager-Official/letsencrypt" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Error Logs" Target="/var/log" Default="/mnt/cache/appdata/Nginx-Proxy-Manager-Official/log" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Database" Target="DB_SQLITE_FILE" Default="/data/database.sqlite" Mode="" Description="Set the location of the SQLite DB file within the container!" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="UID for permissions. Do not change unless you know what you're doing." Type="Variable" Display="advanced" Required="true" Mask="false"/>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="GID for permissions. Do not change unless you know what you're doing." Type="Variable" Display="advanced" Required="true" Mask="false"/>
+  <Config Name="UMASK" Target="UMASK" Default="022" Mode="" Description="UMASK for newly created files. Do not change unless you know what you're doing." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+</Container>
