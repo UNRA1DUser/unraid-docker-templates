@@ -7,11 +7,4 @@ Created Unraid Docker Templates:
 - PostgreSQL-Official (13.03.2024)
 - PostgreSQL_Alpine-Official (13.03.2024)
 - Nginx-Proxy-Manager-Official (16.03.2024)
-
-
-Planned Unraid Docker Templates:
-
-- ONLYOFFICE-MySQL-Official
-- ONLYOFFICE-Mail-Official
-- ONLYOFFICE-Document-Official
-- ONLYOFFICE-Community-Official
+- DuckDNS-Official (16.03.2024)
