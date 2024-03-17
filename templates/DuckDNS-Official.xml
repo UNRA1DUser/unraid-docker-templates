@@ -8,8 +8,11 @@
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://github.com/UNRA1DUser/unraid-docker-templates</Support>
-  <Project>https://docs.linuxserver.io/images/docker-duckdns/?h=duckdns</Project>
-  <Overview>Duckdns is a free service which will point a DNS (sub domains of duckdns.org) to an IP of your choice. The service is completely free, and doesn't require reactivation or forum posts to maintain its existence.&#xD;
+  <Project>https://docs.linuxserver.io/</Project>
+  <Overview>|-------------------------------------------------&#xD;
+| General Information&#xD;
+|-------------------------------------------------&#xD;
+Duckdns is a free service which will point a DNS (sub domains of duckdns.org) to an IP of your choice. The service is completely free, and doesn't require reactivation or forum posts to maintain its existence.&#xD;
 &#xD;
 |-------------------------------------------------&#xD;
 | Application Setup&#xD;

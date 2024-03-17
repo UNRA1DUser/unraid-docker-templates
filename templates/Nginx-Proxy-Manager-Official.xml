@@ -9,7 +9,10 @@
   <Privileged>false</Privileged>
   <Support>https://github.com/UNRA1DUser/unraid-docker-templates</Support>
   <Project>https://nginxproxymanager.com/</Project>
-  <Overview>Nginx Proxy Manager enables you to easily forward to your websites running at home or otherwise, including free SSL, without having to know too much about Nginx or Letsencrypt.&#xD;
+  <Overview>|-------------------------------------------------&#xD;
+| General Information&#xD;
+|-------------------------------------------------&#xD;
+Nginx Proxy Manager enables you to easily forward to your websites running at home or otherwise, including free SSL, without having to know too much about Nginx or Letsencrypt.&#xD;
 &#xD;
 |-------------------------------------------------&#xD;
 | Default Administrator User&#xD;
@@ -39,7 +42,7 @@ Mysql/Maria connection parameters:&#xD;
       DB_MYSQL_NAME: "npm"</Overview>
   <Category>Tools:Utilities Other: Network:Web Network:Proxy Network:Management Network:Other</Category>
   <WebUI>http://[IP]:[PORT:81]</WebUI>
-  <TemplateURL>https://github.com/UNRA1DUser/unraid-docker-templates</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/UNRA1DUser/unraid-docker-templates/master/templates/Nginx-Proxy-Manager-Official.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/UNRA1DUser/unraid-docker-templates/main/templates/img/nginx-proxy-manager.png</Icon>
   <ExtraParams>--memory=1G --restart=unless-stopped</ExtraParams>
   <PostArgs/>
