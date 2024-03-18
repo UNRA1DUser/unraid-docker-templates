@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>Linkwarden-Official</Name>
+  <Name>Linkwarden</Name>
   <Repository>ghcr.io/linkwarden/linkwarden</Repository>
   <Registry>https://github.com/linkwarden/linkwarden</Registry>
   <Network>bridge</Network>
@@ -21,7 +21,7 @@ Additionally, Linkwarden is designed with collaboration in mind, sharing links w
 |-------------------------------------------------&#xD;
 | Register for an Account&#xD;
 |-------------------------------------------------&#xD;
-After the start of the Container you need to Sign up for an Account.&#xD;
+After the start of the Container you need to Sign up for an Account in your own Application.&#xD;
 &#xD;
 |-------------------------------------------------&#xD;
 | SSO/OAuth Integrations&#xD;
