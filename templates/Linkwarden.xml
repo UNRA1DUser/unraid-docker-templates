@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://forums.unraid.net/topic/158420-support-unra1duser-linkwarden-official/</Support>
+  <Support>https://forums.unraid.net/topic/158420-support-unra1duser-linkwarden/</Support>
   <Project>https://linkwarden.app/</Project>
   <Overview>|-------------------------------------------------&#xD;
 | General Information&#xD;
@@ -42,7 +42,7 @@ Here are all the SSO/OAuth integrations Linkwarden has -&amp;gt; https://docs.li
   <Config Name="NEXTAUTH_SECRET" Target="NEXTAUTH_SECRET" Default="very_sensitive_secret" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="true"/>
   <Config Name="NEXTAUTH_URL" Target="NEXTAUTH_URL" Default="http://localhost:3000/api/v1/auth" Mode="" Description="Change localhost to your IP. The Port should be the same as the WebUI Port" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="DATABASE_URL" Target="DATABASE_URL" Default="postgresql://[USERNAME]:[PASSWORD]@localhost:[PORT]/[DATABASE]" Mode="" Description="postgresql://[USERNAME]:[PASSWORD]@localhost:[PORT]/[DATABASE]" Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="Data" Target="/data/data" Default="/mnt/cache/appdata/linkwarden-official" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Data" Target="/data/data" Default="/mnt/cache/appdata/linkwarden" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"/>
   <Config Name="PAGINATION_TAKE_COUNT" Target="PAGINATION_TAKE_COUNT" Default="20" Mode="" Description="The numbers of Links to fetch every time you reach to the bottom of the webpage" Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="STORAGE_FOLDER" Target="STORAGE_FOLDER" Default="/data" Mode="" Description="The folder to store your Screenshot's, PDF's, and profile photos" Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="AUTOSCROLL_TIMEOUT" Target="AUTOSCROLL_TIMEOUT" Default="30" Mode="" Description="The amount of time to wait for the website to be archived (in seconds)" Type="Variable" Display="advanced" Required="false" Mask="false"/>
